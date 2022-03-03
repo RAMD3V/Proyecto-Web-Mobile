@@ -1,0 +1,22 @@
+<app-header></app-header>
+<div id="fondo">
+    <div id="containerform">
+        <div id="container">
+            <h2>Déjanos tu sugerencia</h2>
+            <form [formGroup]="formulario" (ngSubmit)="guardarSug()">
+                <label for="">Usuario</label>
+                <input type="text" placeholder="Ingresa tu Usuario"  formControlName="usuario">
+                <label for="">Ingresa el Juego</label>
+                <input type="text" placeholder="Ingresa el nombre del Juego"  formControlName="nombre">
+                <label for="">Año de lanzamiento</label>
+                <input type="text" placeholder="Año de lanzamiento"  formControlName="year">
+                <label for="">Descripcion</label>
+                <input type="text" placeholder="Descripcion"  formControlName="descripcion">
+                <label for="">Imagen del Juego</label>
+                <input type="file"  formControlName="imagjuego" >
+                <input type="submit" value="Guardar tu Comentario">
+            </form>
+            
+        </div>
+    </div>
+</div>

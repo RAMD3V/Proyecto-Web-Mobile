@@ -1,0 +1,41 @@
+header{
+    background-color: #1A7391;
+}
+#head{
+    background: rgb(0, 132, 255);
+    width: 100%;
+    width: auto;
+  }
+  
+#head ul{
+    line-height: 50px;
+    list-style: none;
+    text-align: center;
+}
+  
+#head ul li{
+    height: auto;
+    display: inline-block;
+    margin: 5px;
+}
+
+#bien{
+    color: white;
+ 
+}
+#head button{
+    display: block;
+    background: rgb(0, 132, 255);
+    height: 30px;
+    color: white;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    
+}
+#head button:hover{
+  background: #053d5e;
+}

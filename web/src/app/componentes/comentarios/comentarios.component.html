@@ -1,0 +1,14 @@
+<table class="fl-table">
+    <thead>
+        <th>Usuario</th>
+        <th>Comentario</th>
+        <th>Puntuación</th>
+    </thead>
+    <tbody *ngFor="let juego of coment">
+        <tr>
+            <td>{{juego['user']}}</td>
+            <td>{{juego['comentario']}}</td>
+            <td>{{juego['punt']}}</td>       
+        </tr>
+    </tbody>
+</table>

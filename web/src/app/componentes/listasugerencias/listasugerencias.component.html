@@ -1,0 +1,49 @@
+<app-header></app-header>
+<div id="contenido">
+    <div><br>
+        <div id=busqueda>
+            <form (ngSubmit)="buscarGame()">
+                <input type="search" placeholder="Buscar Juego sugerido" [formControl]="njuego" class="search__input">
+            </form>
+        </div>
+        <div class="table-wrapper"><br><br>
+            <table class="fl-table" *ngIf="estado">
+                <thead>
+                    <th>Usuario</th>
+                    <th>Juego</th>
+                    <th>Año</th>
+                    <th>Descripcion</th>
+                </thead>
+                <tbody *ngFor="let juego of juegosB">
+                    <tr>
+                        <td>{{juego['usuario']}}</td>
+                        <td>{{juego['nombre']}}</td>
+                        <td>{{juego['year']}}</td>
+                        <td>{{juego['descripcion']}}</td>
+                    
+                    </tr>
+                </tbody>
+        </table><br><br><br>
+    </div>
+        
+    </div>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <th>Usuario</th>
+                <th>Juego</th>
+                <th>Año</th>
+                <th>Descripcion</th>
+            </thead>
+            <tbody *ngFor="let juego of video">
+                <tr>
+                    <td>{{juego['usuario']}}</td>
+                    <td>{{juego['nombre']}}</td>
+                    <td>{{juego['year']}}</td>
+                    <td>{{juego['descripcion']}}</td>
+                
+                </tr>
+            </tbody>
+    </table>
+</div>
+</div>
