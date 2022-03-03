@@ -1,0 +1,54 @@
+<ion-app>
+  <div id="centro">
+    <ion-menu menuId="main-menu" contentId="main">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-icon name="person-circle-outline" id="chido"></ion-icon>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-label *ngFor="let user of usuariosServ">{{user.nombre}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail"></ion-icon>
+            <ion-label *ngFor="let user of usuariosServ">{{user.correo}}</ion-label>
+          </ion-item>
+          <ion-item>
+            
+           <button [routerLink]="['/home']" (ngSubmit)="salirM()">Salir</button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    
+  </div>
+  <ion-router-outlet id="main"></ion-router-outlet>
+  
+<ion-tabs>
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="contenido">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-label>Inicio</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="sugerencias">
+      <ion-icon name="document-text-outline"></ion-icon>
+      <ion-label>Sugerencias</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="contenidoapp">
+      <ion-icon name="game-controller-outline"></ion-icon>
+      <ion-label>Sugerencias totales</ion-label>
+    </ion-tab-button>
+
+
+  </ion-tab-bar>
+
+</ion-tabs>
+
+</ion-app>

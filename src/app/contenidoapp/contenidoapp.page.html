@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div><br>
+    <div id=busqueda>
+        <form (ngSubmit)="buscarGame()">
+          <ion-item>
+            <ion-input type="search" placeholder="Buscar Juego sugerido" [formControl]="njuego" class="search__input"></ion-input>
+            <ion-button type="submit"><ion-icon name="search-circle-outline"></ion-icon></ion-button>
+          </ion-item>
+        </form>
+    </div>
+    <div class="table-wrapper"><br><br>
+        <table class="fl-table" *ngIf="estado">
+            <thead>
+                <th>Usuario</th>
+                <th>Juego</th>
+                <th>Año</th>
+                <th>Descripcion</th>
+            </thead>
+            <tbody *ngFor="let juego of juegosB">
+                <tr>
+                    <td>{{juego['usuario']}}</td>
+                    <td>{{juego['nombre']}}</td>
+                    <td>{{juego['year']}}</td>
+                    <td>{{juego['descripcion']}}</td>
+                
+                </tr>
+            </tbody>
+    </table><br><br><br>
+</div>
+    
+</div>
+  <div class="table-wrapper">
+    <table class="fl-table">
+        <thead>
+            <th>Usuario</th>
+            <th>Juego</th>
+            <th>Año</th>
+            <th>Descripcion</th>
+        </thead>
+        <tbody *ngFor="let juego of video">
+            <tr>
+                <td>{{juego['usuario']}}</td>
+                <td>{{juego['nombre']}}</td>
+                <td>{{juego['year']}}</td>
+                <td>{{juego['descripcion']}}</td>
+            
+            </tr>
+        </tbody>
+  </table>
+  <ion-img src="../../assets/img/sug.png"></ion-img>
+  </div>
+</ion-content>

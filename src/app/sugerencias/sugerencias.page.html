@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title></ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-title>Dejanos tu sugerencia</ion-title>
+  <div id="contenido">
+    <ion-img src="../../assets/img/jueg.png"></ion-img>
+    <form [formGroup]="formulario" (ngSubmit)="guardarSug()">
+      <ion-item>
+        <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Nombre</ion-label>
+      </ion-item>
+      <ion-input type="text"placeholder="Ingresa tu Usuario" formControlName="usuario"></ion-input>
+      <ion-item>
+        <ion-icon name="game-controller-outline"></ion-icon>
+      <ion-label>Videojuego</ion-label>
+      </ion-item>
+      <ion-input type="text" placeholder="Ingresa el Nombre del videojuego" formControlName="nombre"></ion-input>
+      <ion-item>
+        <ion-icon name="calendar-outline"></ion-icon>
+      <ion-label>Año de desarrollo</ion-label>
+      </ion-item>
+      <ion-input type="text" placeholder="Ingresa el Año que se desarrolló" formControlName="year"></ion-input>
+     <ion-item>
+      <ion-icon name="document-text-outline"></ion-icon>
+      <ion-label>Descipcion</ion-label>
+     </ion-item>
+      <ion-input type="text" placeholder="Ingresa la Descripcion del Juego" formControlName="descripcion"></ion-input>
+      <ion-item>
+        <ion-icon name="image-outline"></ion-icon>
+      <ion-label>Imágen del videojuego</ion-label>
+      </ion-item>
+      <ion-input type="file" formControlName="imagjuego"></ion-input>
+      <br>
+      <ion-button id="btn"type="submit" >Guardar sugerencia</ion-button>
+    </form><br>
+ 
+   </div>
+  
+  
+</ion-content>

@@ -1,0 +1,280 @@
+<div id="fondo">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-title id="titulo">Top de Juegos</ion-title>
+
+    <ion-slides [options]="option" class="ion-margin-top">
+      <ion-slide>
+         <ion-card>
+            <ion-card-header>
+              <ion-card-header>
+                  <ion-img src="../../assets/img/apex.jpg"></ion-img>
+              </ion-card-header>
+              <ion-card-subtitle>2019</ion-card-subtitle>
+              <ion-card-title>Apex Legends</ion-card-title>
+            </ion-card-header>
+              
+            <ion-card-content>
+              Apex Legends es un videojuego gratuito perteneciente al género battle royale desarrollado por Respawn Entertainment y publicado por Electronic Arts. Fue lanzado para Microsoft Windows,
+              <br><br>
+              <div id="izq">
+                <button id="botonno" type="submit" [routerLink]="['/apex']"><ion-icon name="information-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi" value="apex"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+              </ion-card-content>
+             
+          </ion-card>
+        </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/csgo.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2012</ion-card-subtitle>
+            <ion-card-title>Counter-Strike: Global Offensive</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Counter-Strike: Global Offensive es un videojuego de disparos en primera persona desarrollado por Valve Corporation y Hidden Path Entertainment. Es el cuarto juego de la saga Counter-Strike. 
+              <br><br>
+              <div id="izq">
+                <button id="botonno" [routerLink]="['/csgo']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/war.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2020</ion-card-subtitle>
+            <ion-card-title>Warzone</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Call of Duty: Warzone es un videojuego de disparos en primera persona, perteneciente al género Battle royale gratuito, lanzado el 10 de marzo de 2020 para PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S y Microsoft Windows.
+              <br><br>
+              <div id="izq">
+                <button id="botonno" [routerLink]="['/war']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/terra.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2011</ion-card-subtitle>
+            <ion-card-title>Terraria</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Terraria es un videojuego de acción, aventura y de sandbox producido de forma independiente por el estudio Re-Logic. Tiene características tales como la exploración, la artesanía, la construcción de estructuras y el combate.​
+              <br><br>
+              <div id="izq">
+                <button id="botonno" [routerLink]="['/terra']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/lol.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2009</ion-card-subtitle>
+            <ion-card-title>League of Legends</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            League of Legends es un videojuego del género multijugador de arena de batalla en línea y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X y para consolas digitales.
+              <br><br>
+              <div id="izq">
+                <button id="botonno" [routerLink]="['/leage']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/sea.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2018</ion-card-subtitle>
+            <ion-card-title>Sea of Thieves</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Sea of Thieves es un videojuego de acción-aventura en primera persona desarrollado por Rare y distribuido por Xbox Game Studios, para las plataformas Xbox One y Microsoft Windows.              <br><br>
+              <div id="izq">
+                <button id="botonno" [routerLink]="['/sea']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/new.jpeg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2021</ion-card-subtitle>
+            <ion-card-title>New World</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Lucha. Explora un emocionante MMO de mundo abierto repleto de peligros y oportunidades en el que forjarás un nuevo destino como un aventurero que naufraga en las costas de la isla sobrenatural de Aetérnum           
+            <br>
+            <div id="izq">
+                <button id="botonno" [routerLink]="['/new']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/gta.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2013</ion-card-subtitle>
+            <ion-card-title>Grand Theft Auto V</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Grand Theft Auto V es un videojuego de acción-aventura de mundo abierto desarrollado por el estudio Rockstar North y distribuido por Rockstar Games             <div id="izq">
+                <button id="botonno" [routerLink]="['/gta']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/mine.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2011</ion-card-subtitle>
+            <ion-card-title>Minecraft</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Minecraft es un videojuego de construcción de tipo «mundo abierto» o sandbox creado originalmente por el sueco Markus Persson, ​ y posteriormente desarrollado por Mojang Studios.​            
+            <div id="izq">
+                <button id="botonno" [routerLink]="['/mine']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-header>
+                <ion-img src="../../assets/img/for.jpg"></ion-img>
+            </ion-card-header>
+            <ion-card-subtitle>2017</ion-card-subtitle>
+            <ion-card-title>Fortnite</ion-card-title>
+          </ion-card-header>
+            
+          <ion-card-content>
+            Es un juego de tipo batalla real en el que compiten hasta cien jugadores en solitario o en escuadrones de dos o cuatro miembros, este juego cuenta con construcción lo cual permite una gran interaccion con los usuarios.
+            <br>
+            <div id="izq">
+                <button id="botonno" [routerLink]="['/forna']"><ion-icon name="close-circle-outline"></ion-icon></button>
+              </div>
+             <div id="der">
+              <button id="botonsi"><ion-icon name="heart-circle-outline"></ion-icon></button>
+             </div>
+            </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+    <div id="container">
+      <ion-title>Dejanos tu comentario</ion-title>
+       <form [formGroup]="formulariocom"   (ngSubmit)="guardarCom()">
+        <ion-item>
+          <ion-icon name="person-circle-outline" id="icon"></ion-icon>
+         <ion-label>Usuario: </ion-label>
+         <ion-input placeholder="Ingresa tu Nombre" formControlName="user"></ion-input>
+        </ion-item>
+         <ion-item>
+          <ion-icon name="document-text-outline"></ion-icon>
+          <ion-label>Comentario: </ion-label>
+          <ion-input placeholder="Ingresa tu Correo" formControlName="comentario"></ion-input>
+         </ion-item>
+         <ion-item>
+          <ion-icon name="podium-outline"></ion-icon>
+          <ion-label>Calificaión: </ion-label>
+          <ion-input type="number" placeholder="Ingresa tu calificación" formControlName="punt"></ion-input>
+         </ion-item>
+         <br>
+         <ion-button id="btn"type="submit">Guardar Comentario</ion-button>
+       </form><br>
+       </div>
+       <table class="fl-table" *ngIf="estado">
+        <tr>
+            <th>Usuario</th>
+            <th>Comentario</th>
+            <th>Calificación</th>
+        </tr>
+        <tbody *ngFor="let comentario of coment">
+            <tr>
+                <td>{{comentario.user}}</td>
+                <td>{{comentario.comentario}}</td>
+                <td>{{comentario.punt}}</td>
+            </tr>
+        </tbody>
+    </table><br>
+   
+  </ion-content>
+
+
+</div><br><br><br>

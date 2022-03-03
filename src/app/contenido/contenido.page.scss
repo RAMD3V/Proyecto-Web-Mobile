@@ -1,0 +1,114 @@
+#fondo{
+    height: 100%;
+    width: 100%;
+  }
+  #titulo{
+      text-align: center;
+      font-weight: bold;
+  }
+ion-title {
+    font-weight: 500;
+}
+ion-slide{
+    height: auto;
+}
+ion-card {
+    width: 100%;
+    box-shadow: none;
+   
+    border-radius: 12px;
+    
+    ion-img {
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        transform: scale(1.1, 1.1) rotate(1deg);
+        transition: 600ms all ease-in-out;
+    }
+}
+ion-card-content{
+    text-align: justify;
+}
+
+button{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   display: block;
+   margin: 0px auto;
+
+}
+#botonno{
+    background: tomato;
+}
+#botonsi{
+    background: rgb(210, 21, 228);
+}
+#izq{
+    float: left;
+    margin-bottom: 20px;
+}
+#der{
+
+    float: right;
+    margin-bottom: 20px;
+}
+ion-icon {
+    width: 30px;
+    height: 30px;
+}
+.swiper-slide-active {
+    transform: scale(1.05, 1.05);
+
+    ion-card {
+        img {
+            transform: scale(1, 1);
+        }
+    }
+}
+
+.swiper-slide {
+    transition: 400ms all ease-in-out;
+}
+ion-title{
+    text-align: center;
+}
+ion-button{
+    width: 100%;
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+    color: black;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: #1988c9;
+}
+
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #023888;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+

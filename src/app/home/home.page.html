@@ -1,0 +1,36 @@
+<div id="fondo">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+
+      <ion-title id="inicio">
+        Inicio
+      </ion-title>
+    
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content  [fullscreen]="true" >
+    <ion-header collapse="condense">
+
+    </ion-header>
+    <div id="fondo">
+      <ion-title id="titulo">¡Bienvenidos!</ion-title>
+      <ion-img src="../../assets/img/sent.png"></ion-img>>
+      <div id="container">
+       <ion-icon name="person-circle-outline" id="icon"></ion-icon>
+        <form [formGroup]="formUsuario" (ngSubmit)="guardarU()">
+          <ion-label>Nombre</ion-label>
+          <ion-input placeholder="Ingresa tu Nombre" formControlName="nombre"></ion-input>
+          <ion-label>Correo</ion-label>
+          <ion-input placeholder="Ingresa tu Correo" formControlName="correo"></ion-input>
+          <ion-label>Contraseña</ion-label>
+          <ion-input type="password" placeholder="Ingresa tu Contraseña" formControlName="pass"></ion-input>
+          <br>
+          <ion-button id="btn"type="submit" [routerLink]="['/contenido']">Ingresar</ion-button>
+        </form><br>
+        </div>
+    </div><br>
+    
+    
+  </ion-content>
+</div>
